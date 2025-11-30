@@ -26,7 +26,7 @@ async function fetchWeather(city) {
   }
 }
 
-
+// promise return 
 async function fetchWeather(city) {
   try {
     const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
@@ -41,6 +41,7 @@ async function fetchWeather(city) {
     document.getElementById('wind').textContent = `Wind: ${data.wind.speed} km/h`;
     document.getElementById('City_Name').textContent = data.name;
 
+    // icons 
 const icons = {
   Clear: 'fa-sun',
   Clouds: 'fa-cloud',
@@ -50,6 +51,7 @@ const icons = {
   Drizzle: 'fa-cloud-rain',
   Fog: 'fa-smog'
 };
+
 
 const weatherMain = data.weather[0].main;
   } catch (err) {

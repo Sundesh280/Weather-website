@@ -1,3 +1,4 @@
+/* body  */
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to right, #4facfe, #00f2fe);
@@ -9,6 +10,7 @@ body {
   height: 100vh;
 }
 
+/*body container   */
 .container {
   background: white;
   padding: 20px;
@@ -23,6 +25,7 @@ h1 {
   font-size: 22px;
 }
 
+/* search box  */
 .search-box {
   margin-bottom: 20px;
 }
