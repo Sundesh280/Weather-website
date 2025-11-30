@@ -60,7 +60,7 @@ const weatherMain = data.weather[0].main;
 }
 
 
-// ✅ Event listeners
+//  Event listeners
 searchBtn.addEventListener('click', () => {
   const city = cityInput.value.trim();
   if (city) {
